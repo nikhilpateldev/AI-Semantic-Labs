@@ -1,0 +1,24 @@
+version: '3.8'
+services:
+  qdrant:
+    image: qdrant/qdrant:latest
+    container_name: qdrant
+    restart: unless-stopped
+    ports:
+      - "6333:6333"
+      - "6334:6334"
+    volumes:
+      - qdrant_storage:/qdrant/storage
+
+  # Optional Ollama service. Most users run Ollama locally; uncomment if you have a docker image.
+  # ollama:
+  #   image: ollama/ollama:latest
+  #   container_name: ollama
+  #   restart: unless-stopped
+  #   ports:
+  #     - "11434:11434"
+  #   environment:
+  #     - OLLAMA_API_KEY=
+
+volumes:
+  qdrant_storage:

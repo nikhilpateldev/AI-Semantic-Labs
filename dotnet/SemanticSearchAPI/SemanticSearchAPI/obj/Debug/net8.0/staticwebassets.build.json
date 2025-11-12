@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "1GfwTxmvp0Rv0n5Ipq44HVsVJMIHFyvSi6tWPu/GPVA=",
+  "Source": "SemanticSearchAPI",
+  "BasePath": "_content/SemanticSearchAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

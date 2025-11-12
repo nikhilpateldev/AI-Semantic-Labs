@@ -1,0 +1,101 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Nikhil\\Project\\SampleProject\\AIChatBot\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{33BCDDC9-332E-44B5-A99E-4BA35312C298}|AIChatBot\\AIChatBot.csproj|c:\\nikhil\\project\\sampleproject\\aichatbot\\aichatbot\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33BCDDC9-332E-44B5-A99E-4BA35312C298}|AIChatBot\\AIChatBot.csproj|solutionrelative:aichatbot\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33BCDDC9-332E-44B5-A99E-4BA35312C298}|AIChatBot\\AIChatBot.csproj|c:\\nikhil\\project\\sampleproject\\aichatbot\\aichatbot\\db\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33BCDDC9-332E-44B5-A99E-4BA35312C298}|AIChatBot\\AIChatBot.csproj|solutionrelative:aichatbot\\db\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33BCDDC9-332E-44B5-A99E-4BA35312C298}|AIChatBot\\AIChatBot.csproj|c:\\nikhil\\project\\sampleproject\\aichatbot\\aichatbot\\model\\application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33BCDDC9-332E-44B5-A99E-4BA35312C298}|AIChatBot\\AIChatBot.csproj|solutionrelative:aichatbot\\model\\application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33BCDDC9-332E-44B5-A99E-4BA35312C298}|AIChatBot\\AIChatBot.csproj|c:\\nikhil\\project\\sampleproject\\aichatbot\\aichatbot\\model\\tenant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33BCDDC9-332E-44B5-A99E-4BA35312C298}|AIChatBot\\AIChatBot.csproj|solutionrelative:aichatbot\\model\\tenant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33BCDDC9-332E-44B5-A99E-4BA35312C298}|AIChatBot\\AIChatBot.csproj|c:\\nikhil\\project\\sampleproject\\aichatbot\\aichatbot\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33BCDDC9-332E-44B5-A99E-4BA35312C298}|AIChatBot\\AIChatBot.csproj|solutionrelative:aichatbot\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Nikhil\\Project\\SampleProject\\AIChatBot\\AIChatBot\\Program.cs",
+              "RelativeDocumentMoniker": "AIChatBot\\Program.cs",
+              "ToolTip": "C:\\Nikhil\\Project\\SampleProject\\AIChatBot\\AIChatBot\\Program.cs",
+              "RelativeToolTip": "AIChatBot\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T11:26:38.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Application.cs",
+              "DocumentMoniker": "C:\\Nikhil\\Project\\SampleProject\\AIChatBot\\AIChatBot\\Model\\Application.cs",
+              "RelativeDocumentMoniker": "AIChatBot\\Model\\Application.cs",
+              "ToolTip": "C:\\Nikhil\\Project\\SampleProject\\AIChatBot\\AIChatBot\\Model\\Application.cs",
+              "RelativeToolTip": "AIChatBot\\Model\\Application.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T11:24:26.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Tenant.cs",
+              "DocumentMoniker": "C:\\Nikhil\\Project\\SampleProject\\AIChatBot\\AIChatBot\\Model\\Tenant.cs",
+              "RelativeDocumentMoniker": "AIChatBot\\Model\\Tenant.cs",
+              "ToolTip": "C:\\Nikhil\\Project\\SampleProject\\AIChatBot\\AIChatBot\\Model\\Tenant.cs",
+              "RelativeToolTip": "AIChatBot\\Model\\Tenant.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T11:23:49.005Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MyDbContext.cs",
+              "DocumentMoniker": "C:\\Nikhil\\Project\\SampleProject\\AIChatBot\\AIChatBot\\DB\\MyDbContext.cs",
+              "RelativeDocumentMoniker": "AIChatBot\\DB\\MyDbContext.cs",
+              "ToolTip": "C:\\Nikhil\\Project\\SampleProject\\AIChatBot\\AIChatBot\\DB\\MyDbContext.cs",
+              "RelativeToolTip": "AIChatBot\\DB\\MyDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T11:22:40.868Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ChatController.cs",
+              "DocumentMoniker": "C:\\Nikhil\\Project\\SampleProject\\AIChatBot\\AIChatBot\\Controllers\\ChatController.cs",
+              "RelativeDocumentMoniker": "AIChatBot\\Controllers\\ChatController.cs",
+              "ToolTip": "C:\\Nikhil\\Project\\SampleProject\\AIChatBot\\AIChatBot\\Controllers\\ChatController.cs",
+              "RelativeToolTip": "AIChatBot\\Controllers\\ChatController.cs",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAswI0AAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T11:08:16.904Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
