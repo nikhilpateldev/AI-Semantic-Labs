@@ -19,7 +19,7 @@ LLM_MODEL = os.getenv("OLLAMA_LLM_MODEL", "llama3")
 
 
 # --- CLIENTS ---
-
+print(QDRANT_URL)
 qdrant = QdrantClient(
     url=QDRANT_URL,
     api_key=QDRANT_API_KEY
@@ -29,12 +29,18 @@ qdrant = QdrantClient(
 # --- HELPERS ---
 
 def embed_text(text):
+    print("1.2")
     payload = {"model": "nomic-embed-text", "input": text}
-    r = requests.post("http://localhost:11434/api/embed", json=payload)
+    r = requests.post("http://localhost:11434/api/embed", json=payload, timeout=60)
+    print("1.3")
     r.raise_for_status()
-    data = r.json()
-    embedding = data.get("embeddings", [])
-    return np.array(embedding, dtype=np.float32)
+    resp = r.json()
+    print("debug")
+    # pdb.set_trace()
+    if isinstance(resp, dict) and "embeddings" in resp:
+        return resp["embeddings"]
+    return resp
+
 
 
 def retrieve_context(question: str, top_k: int = 5) -> List[qmodels.ScoredPoint]:

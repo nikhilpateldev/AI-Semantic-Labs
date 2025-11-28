@@ -15,8 +15,8 @@ OLLAMA_EMBED_MODEL = os.getenv("OLLAMA_EMBED_MODEL", "nomic-embed-text")
 
 # --- Connect to Qdrant ---
 client = QdrantClient(
-    url="https://99f1eff9-6c61-406e-85fb-5c6881a73007.eu-central-1-0.aws.cloud.qdrant.io:6333", 
-    api_key="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3MiOiJtIn0.pMNtV_I3sWpYfa2o76NXyr82l-0GD-oXeLOctDqZbAg",
+    url=QDRANT_URL, 
+    api_key=QDRANT_API_KEY,
     )
 
 

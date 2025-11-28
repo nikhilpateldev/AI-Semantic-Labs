@@ -11,12 +11,14 @@ from qdrant_client.http.models import VectorParams, Distance, PointStruct
 from dotenv import load_dotenv
 from data_loader import load_directory
 import uuid
+import pdb;
 load_dotenv()
 
 OLLAMA_URL = os.getenv("OLLAMA_URL", "http://localhost:11434/api/embed")
 OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "nomic-embed-text")
 QDRANT_URL = os.getenv("QDRANT_URL", "http://localhost:6333")
 COLLECTION_NAME = os.getenv("QDRANT_COLLECTION", "my_docs")
+QDRANT_API_KEY = os.getenv("QDRANT_API_KEY")
 
 def chunk_text(text: str, chunk_size: int = 800, overlap: int = 200):
     """
@@ -41,6 +43,8 @@ def embed_texts(texts):
     r = requests.post(OLLAMA_URL, json=payload, timeout=60)
     r.raise_for_status()
     resp = r.json()
+    print("debug")
+    # pdb.set_trace()
     if isinstance(resp, dict) and "embeddings" in resp:
         return resp["embeddings"]
     return resp
@@ -59,10 +63,11 @@ def ensure_collection(client: QdrantClient, dim: int):
 
 def main(data_dir: str, batch_size: int = 16, chunk_size: int = 800, overlap: int = 200):
     client = QdrantClient(
-    url="https://99f1eff9-6c61-406e-85fb-5c6881a73007.eu-central-1-0.aws.cloud.qdrant.io:6333", 
-    api_key="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3MiOiJtIn0.pMNtV_I3sWpYfa2o76NXyr82l-0GD-oXeLOctDqZbAg",
+    url=QDRANT_URL, 
+    api_key=QDRANT_API_KEY,
     )
-    docs = load_directory(data_dir)
+    abs_path = os.path.join(os.path.dirname(__file__), data_dir)
+    docs = load_directory(abs_path)
     print(f"Loaded {len(docs)} documents from {data_dir}")
 
     # prepare chunks
@@ -103,7 +108,7 @@ def main(data_dir: str, batch_size: int = 16, chunk_size: int = 800, overlap: in
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--data-dir", default="data", help="Directory containing pdf/html/txt files")
+    parser.add_argument("--data-dir", default="test_data", help="Directory containing pdf/html/txt files")
     parser.add_argument("--batch-size", type=int, default=16)
     parser.add_argument("--chunk-size", type=int, default=800)
     parser.add_argument("--overlap", type=int, default=200)
