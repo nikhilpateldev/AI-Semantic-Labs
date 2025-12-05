@@ -9,10 +9,10 @@ builder.Services.AddSingleton(sp =>
     var config = sp.GetRequiredService<IConfiguration>();
 
     // Read from appsettings.json or default to localhost:6334
-    var host = config.GetValue<string>("Qdrant:Url") ?? "localhost";
-    var apiKey = config.GetValue<string?>("Qdrant:Key");
+    var host = Environment.GetEnvironmentVariable("QDRANT_URL") ?? "localhost";
+    var apiKey = Environment.GetEnvironmentVariable("QDRANT_API_KEY");
 
-    return new QdrantClient( new Uri(qdrantUrl), apiKey: apiKey);
+    return new QdrantClient(new Uri(qdrantUrl), apiKey: apiKey);
 });
 // Add services to the container.
 

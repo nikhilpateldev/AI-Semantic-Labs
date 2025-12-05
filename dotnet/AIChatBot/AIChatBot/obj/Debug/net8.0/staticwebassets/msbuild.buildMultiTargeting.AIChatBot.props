@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\AIChatBot.props" />
-</Project>
